@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "movie-recommender"
+version = "0.1.0"
+description = ""
+authors = ["Alfurquan Zahedi <alzahedi@microsoft.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = "^2.2.2"
+fastapi = "^0.112.0"
+scikit-learn = "^1.5.1"
+uvicorn = "^0.30.6"
+requests = "^2.32.3"
+rapidfuzz = "^3.9.6"
+
+[tool.poetry.scripts]
+movie-recommender = "movie_recommender.main:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
