@@ -2,9 +2,9 @@ from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from typing import List
 from fastapi.middleware.cors import CORSMiddleware
-from .recommender.app import preprocess_data
-from .data_structures.trie import Trie
-from .api import movie
+from movie_recommender.recommender.app import preprocess_data
+from movie_recommender.data_structures.trie import Trie
+from movie_recommender.api import movie
 import uvicorn
 
 @asynccontextmanager
